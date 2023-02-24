@@ -1,0 +1,52 @@
+.logo {
+    width: 100px;
+}
+
+.bg-color {
+    background-color: #ffb300;
+}
+
+.bg-color:hover {
+    background-color: #FF9900;
+}
+
+.search-box {
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+
+.bi-search {
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+}
+
+.nav-tools {
+    color: white;
+    font-weight: 600;
+    margin: auto 2rem;
+}
+
+.nav-list {
+    cursor: pointer;
+    position: relative;
+}
+
+.nav-list:hover {
+    outline: 1px solid white;
+    outline-offset: 10px;
+}
+
+.nav-line-1 {
+    font-size: 0.6rem;
+    opacity: 0.85;
+    line-height: .35rem;
+}
+
+.item-count {
+    position: absolute;
+    color: #FF9900;
+    top: -15px;
+    left: 13px;
+}
+
+/* #FF9900 */
