@@ -13,7 +13,7 @@ function Product(props) {
                 <p className="">{name}</p>
                 <h5 className="price-box"><small><sup>₹</sup></small><strong> {price} </strong></h5>
                 <p className="rating">{Array(rating).fill().map((_, i) => (<span>⭐</span>))}</p>
-                <img src={imgUrl} className="align-self-center" style={{ width: "200px" }} alt="..." />
+                <img src={imgUrl} className="align-self-center" style={{ objectFit: "contain", width: "200px", height: "200px" }} alt="..." />
                 <span className="btn bg-color mt-3 align-self-center" onClick={() => { addToCart(props.data) }}>Add to Cart</span>
             </div>
         </div>

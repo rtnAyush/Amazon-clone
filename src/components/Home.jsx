@@ -1,6 +1,8 @@
 import "./Home.css"
 import Product from "./Product"
 import { products, bgImage } from "../productData/productData";
+import { v4 as uuidv4 } from 'uuid';
+
 
 function Home() {
     return (
@@ -31,13 +33,13 @@ function Home() {
             </div>
             <div className="container" style={{ marginTop: "-350px" }}>
                 <div className="d-flex justify-content-between flex-grow-1">
-                    <Product key={Math.random()} data={products[0]} />
-                    <Product key={Math.random() * 2} data={products[1]} />
+                    <Product key={uuidv4()} data={products[0]} />
+                    <Product key={uuidv4()} data={products[1]} />
                 </div>
                 <div className="row">
-                    <Product key={Math.random() * 3} data={products[2]} />
-                    <Product key={Math.random() * 4} data={products[3]} />
-                    <Product key={Math.random() * 5} data={products[4]} />
+                    <Product key={uuidv4()} data={products[2]} />
+                    <Product key={uuidv4()} data={products[3]} />
+                    <Product key={uuidv4()} data={products[4]} />
                 </div>
             </div>
 

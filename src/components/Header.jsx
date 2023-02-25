@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "../img/amazon-logo.png"
 import CartBtn from "./CartBtn";
 import "./Header.css"
@@ -6,7 +7,7 @@ function Header() {
     return (
         <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-dark">
             <div className="d-flex">
-                <a className="navbar-brand mx-4" href="/"><img className="logo" src={logo} alt="logo" /></a>
+                <Link className="navbar-brand mx-4" to={"/"}><img className="logo" src={logo} alt="logo" /></Link>
             </div>
 
             <div className="d-flex flex-grow-1">
