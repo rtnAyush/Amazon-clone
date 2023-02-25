@@ -1,13 +1,9 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import CartContext from "../context/AddToCart/CartContext";
 
 function SubTotal() {
     const { items } = useContext(CartContext);
 
-    useEffect(() => {
-        getPrice()
-    }, [items]);
-    
     const getPrice = () => {
         let price = 0;
 

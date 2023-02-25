@@ -11,8 +11,8 @@ function App() {
       <CartState>
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/cart" element={<Cart />} />
+          <Route path="/Amazon-clone/" element={<Home />} />
+          <Route path="/Amazon-clone/cart" element={<Cart />} />
         </Routes>
       </CartState>
     </>

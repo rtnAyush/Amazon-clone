@@ -7,7 +7,7 @@ function Header() {
     return (
         <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-dark">
             <div className="d-flex">
-                <Link className="navbar-brand mx-4" to={"/"}><img className="logo" src={logo} alt="logo" /></Link>
+                <Link className="navbar-brand mx-4" to={"/Amazon-clone/"}><img className="logo" src={logo} alt="logo" /></Link>
             </div>
 
             <div className="d-flex flex-grow-1">
