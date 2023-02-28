@@ -1,3 +1,7 @@
+body {
+    background-color: rgb(234, 237, 237);
+}
+
 .home-img {
     width: 100%;
     z-index: -1;

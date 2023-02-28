@@ -4,6 +4,7 @@ import CartContext from "./CartContext";
 
 function CartState(props) {
     const [items, setItems] = useState([]);
+    const [user, setUser] = useState({});
 
     const addToCart = (item) => {
         let idx = items.findIndex((basketItem) => basketItem._id === item._id);
@@ -19,7 +20,6 @@ function CartState(props) {
 
         let idx = items.findIndex((basketItem) => basketItem._id === item._id);
         if (idx !== -1) {
-            // console.log("bef", items[idx].qty);
             items[idx].qty = val;
             // console.log("aft", items[idx].qty);
         }
@@ -32,8 +32,12 @@ function CartState(props) {
         setItems(newBasket);
     }
 
+    const getUser = (user) => {
+        setUser(user);
+    }
+
     return (
-        <CartContext.Provider value={{ items, addToCart, removeFromCart, updateQty }}>
+        <CartContext.Provider value={{ items, user, addToCart, removeFromCart, updateQty, getUser }}>
             {props.children}
         </CartContext.Provider>
     );

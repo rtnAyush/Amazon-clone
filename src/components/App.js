@@ -3,16 +3,19 @@ import Cart from "./Cart";
 import Header from "./Header"
 import Home from "./Home";
 import { Routes, Route } from "react-router-dom";
+import Login from "./Login";
+
 
 
 function App() {
+
   return (
     <>
       <CartState>
-        <Header />
         <Routes>
-          <Route path="/Amazon-clone/" element={<Home />} />
-          <Route path="/Amazon-clone/cart" element={<Cart />} />
+          <Route path="/Amazon-clone/login" element={<Login />} />
+          <Route path="/Amazon-clone/" element={<><Header /><Home /></>} />
+          <Route path="/Amazon-clone/cart" element={<><Header /><Cart /></>} />
         </Routes>
       </CartState>
     </>
