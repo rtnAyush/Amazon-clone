@@ -1,0 +1,23 @@
+.cart__product__img {
+    width: 100%;
+    max-height: 200px;
+    min-height: 100px;
+    object-fit: contain;
+    margin: auto 10px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 667px) {
+    .cart__product__img {
+        max-height: 250px;
+        min-height: 200px;
+        min-width: 150px;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 667px) {
+    .subtotal-left {
+        flex-direction:unset !important;
+    }
+}

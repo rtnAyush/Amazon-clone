@@ -1,10 +1,9 @@
 import { useState } from "react";
-import CartContext from "./CartContext";
 
 
 function CartState(props) {
     const [items, setItems] = useState([]);
-    const [user, setUser] = useState({});
+    const [user, setUser] = useState('');
 
     const addToCart = (item) => {
         let idx = items.findIndex((basketItem) => basketItem._id === item._id);
@@ -35,12 +34,6 @@ function CartState(props) {
     const getUser = (user) => {
         setUser(user);
     }
-
-    return (
-        <CartContext.Provider value={{ items, user, addToCart, removeFromCart, updateQty, getUser }}>
-            {props.children}
-        </CartContext.Provider>
-    );
 }
 
 export default CartState;

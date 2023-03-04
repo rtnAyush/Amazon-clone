@@ -66,6 +66,8 @@ function Header() {
                         </span>
                     </button>
 
+
+
                     <Link className="navbar-brand" to="/Amazon-clone/">
                         <img ref={logo} className="logo" src={process.env.PUBLIC_URL + "/images/amazon-logo.png"} alt="logo" />
                     </Link>
@@ -80,21 +82,21 @@ function Header() {
                 <div className="d-flex justify-content-evenly nav-tools">
                     <div className="collapse navbar-collapse menu menu-sm" id="navbarContent">
 
-                        <Link to={!user && "/Amazon-clone/login"} className="header__link nav-item1" >
+                        <Link to={!user && "/Amazon-clone/login"} className="header__link nav-item" >
                             <div onClick={handleAuth} className="nav__option">
                                 <span className="nav__optionLine1">Hello, {user ? (user.email) : "Guest"} </span>
                                 <span className="nav__optionLine2">{user ? "sign Out" : "sign In"}</span>
                             </div>
                         </Link>
 
-                        <Link to="/Amazon-clone/" className="header__link" >
+                        <Link to="/Amazon-clone/" className="header__link nav-item" >
                             <div className="nav__option">
                                 <span className="nav__optionLine1" >Returns</span>
                                 <span className="nav__optionLine2" >& Orders</span>
                             </div>
                         </Link>
 
-                        <Link to="/Amazon-clone/" className="header__link" >
+                        <Link to="/Amazon-clone/" className="header__link nav-item" >
                             <div className="nav__option">
                                 <span className="nav__optionLine1" >Your</span>
                                 <span className="nav__optionLine2" >Prime</span>

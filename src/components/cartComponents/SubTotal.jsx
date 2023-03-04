@@ -1,30 +1,21 @@
-import { useContext } from "react";
-import CartContext from "../context/AddToCart/CartContext";
+import { getSubTotal } from "../../context/reducer";
+import { useStateValue } from "../../context/StateProvider";
 
 function SubTotal() {
-    const { items } = useContext(CartContext);
+    const [{ basket }] = useStateValue();
 
-    const getPrice = () => {
-        let price = 0;
-
-        items.forEach(item => {
-            price += (item.qty * item.price);
-        });
-
-        return price;
-    }
     return (
         <div className="card p-2">
             <div className="card-body">
                 <h5 className="card-title d-flex justify-content-between">
-                    <span>Subtotal ({items.length} items):</span>
+                    <span>Subtotal ({basket.length} items):</span>
                     <span>
                         <small>
                             <sup> ₹ </sup>
                         </small>
                         <strong>
                             {
-                                getPrice()
+                                getSubTotal(basket)
                             }
                         </strong>
                     </span>

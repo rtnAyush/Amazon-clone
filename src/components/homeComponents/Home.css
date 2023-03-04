@@ -2,17 +2,25 @@ body {
     background-color: rgb(234, 237, 237);
 }
 
-.home-img {
+.home__img {
     width: 100%;
+    object-fit: contain;
+    max-height: 400px;
     z-index: -1;
-    margin-bottom: -150px;
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 
 .carousel-btn {
-    bottom: 300px;
+    /* bottom: 300px; */
+    z-index: 2;
 }
 
 .carousel-btn:hover {
     border: 2px solid white;
+}
+
+@media screen and (min-width: 699px) {
+    .home__img {
+        margin-bottom: -150px;
+    }
 }
