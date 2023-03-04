@@ -1,14 +1,13 @@
 {
   "files": {
-    "main.css": "/Amazon-clone/static/css/main.307946a6.css",
-    "main.js": "/Amazon-clone/static/js/main.6a24c240.js",
-    "static/media/amazon-logo-black.png": "/Amazon-clone/static/media/amazon-logo-black.5be8d94829e07c27e696.png",
+    "main.css": "/Amazon-clone/static/css/main.ed0a4326.css",
+    "main.js": "/Amazon-clone/static/js/main.6138fc03.js",
     "index.html": "/Amazon-clone/index.html",
-    "main.307946a6.css.map": "/Amazon-clone/static/css/main.307946a6.css.map",
-    "main.6a24c240.js.map": "/Amazon-clone/static/js/main.6a24c240.js.map"
+    "main.ed0a4326.css.map": "/Amazon-clone/static/css/main.ed0a4326.css.map",
+    "main.6138fc03.js.map": "/Amazon-clone/static/js/main.6138fc03.js.map"
   },
   "entrypoints": [
-    "static/css/main.307946a6.css",
-    "static/js/main.6a24c240.js"
+    "static/css/main.ed0a4326.css",
+    "static/js/main.6138fc03.js"
   ]
 }
