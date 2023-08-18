@@ -1,5 +1,11 @@
 # Getting Started with Create React App
 
+
+https://github.com/Ayush211107/Amazon-clone/assets/98096047/4d213c01-c62f-4cf5-8000-e2ba37625295
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
