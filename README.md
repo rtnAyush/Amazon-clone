@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 
 
-https://github.com/Ayush211107/Amazon-clone/assets/98096047/4d213c01-c62f-4cf5-8000-e2ba37625295
+https://github.com/rtnAyush/Amazon-clone/assets/98096047/4d213c01-c62f-4cf5-8000-e2ba37625295
 
 
 
